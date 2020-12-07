@@ -59,6 +59,7 @@ class App extends React.Component {
       .then(response => {
         this.setState({ results: response.items })
       })
+      .catch(err => console.log('Something went wrong: ' + err))
   }
 
   render() {
